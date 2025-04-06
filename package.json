@@ -35,5 +35,8 @@
     "socket.io-client": "^4.8.1",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0",
     "zod": "^3.23.6"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
