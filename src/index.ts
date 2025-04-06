@@ -136,7 +136,7 @@ async function loadEventHandlers(): Promise<((socket: any, io: any) => void)[]> 
   });
   
   // Start the server
-  app.listen(ServerConfig.HOST, ServerConfig.PORT, (token) => {
+  app.listen((ServerConfig.HOST || '0.0.0.0'), (ServerConfig.PORT || 3000), (token) => {
     if (!token) {
       return loggerService.warn(`Port ${ServerConfig.PORT} is already in use.`);
     }
